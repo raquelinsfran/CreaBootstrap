@@ -14,6 +14,27 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+           .custom-card {
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+
+            .custom-card-title {
+                font-weight: bold; /* Establece el título en negrita */
+                font-size: 16px; /* Tamaño de fuente para el título */
+            }
+
+            .custom-card-subtitle {
+                font-weight: normal; /* Establece el subtitulo en fuente normal */
+                font-size: 14px; /* Tamaño de fuente para el subtitulo */
+            }
+
+            .custom-card-img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        </style>
     </head>
     <body>
         <!-- Navigation-->
@@ -51,64 +72,59 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
-                            <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on September 24, 2023
-                        </p>
+                    <!-- Post preview as Cards-->
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card custom-card h-100">
+                                <a href="post.html" class="card-link">
+                                    <img src="assets/img/post-bg.jpg" alt="Card image cap" class="custom-card-img"/>
+                                    <div class="card-body">
+                                        <h2 class="card-title custom-card-title">Man must explore, and this is exploration at its greatest</h2>
+                                        <h3 class="card-subtitle custom-card-subtitle">Problems look mighty small from 150 miles up</h3> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card custom-card h-100">
+                                <a href="post.html" class="card-link">
+                                    <img src="assets/img/post-bg.jpg" alt="Card image cap" class="custom-card-img"/>
+                                    <div class="card-body">
+                                        <h2 class="card-title custom-card-title">I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card custom-card h-100">
+                                <a href="post.html" class="card-link">
+                                    <img src="assets/img/post-bg.jpg" alt="Card image cap" class="custom-card-img"/>
+                                    <div class="card-body">
+                                        <h2 class="card-title custom-card-title">Science has not yet mastered prophecy</h2>
+                                        <h3 class="card-subtitle custom-card-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card custom-card h-100">
+                                <a href="post.html" class="card-link">
+                                    <img src="assets/img/post-bg.jpg" alt="Card image cap" class="custom-card-img"/>
+                                    <div class="card-body">
+                                        <h2 class="card-title custom-card-title">Failure is not an option</h2>
+                                        <h3 class="card-subtitle custom-card-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="post.html"><h2 class="post-title">I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</h2></a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on September 18, 2023
-                        </p>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Science has not yet mastered prophecy</h2>
-                            <h3 class="post-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on August 24, 2023
-                        </p>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Failure is not an option</h2>
-                            <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on July 8, 2023
-                        </p>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Pager-->
-                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+                   <!-- Botón "Older Posts" -->
+                   <div class="d-flex justify-content-center my-4">
+                    <a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a>
                 </div>
             </div>
         </div>
+    </div>
         <!-- Footer-->
         <footer class="border-top">
             <div class="container px-4 px-lg-5">
